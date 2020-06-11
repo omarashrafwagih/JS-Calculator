@@ -22,7 +22,8 @@ body {
 #calculator {
   overflow: hidden;
   min-height: 480px;
-  width: 22%;
+  max-height: 480px;
+  max-width: 25%;
   min-width: 280px;
   background-color: #3a4655;
   position: absolute;
@@ -59,6 +60,9 @@ body {
       }
       &:active {
         background-color: darken(#374352, 20%);
+      }
+      &:focus {
+        background-color: #374352;
       }
       &:nth-of-type(17) {
         width: 48.58% !important;

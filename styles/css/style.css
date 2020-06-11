@@ -27,7 +27,8 @@ body {
 #calculator {
   overflow: hidden;
   min-height: 480px;
-  width: 22%;
+  max-height: 480px;
+  max-width: 25%;
   min-width: 280px;
   background-color: #3a4655;
   position: absolute;
@@ -74,6 +75,10 @@ body {
 
 #calculator #buttons .btncontainer:active {
   background-color: #0e1115;
+}
+
+#calculator #buttons .btncontainer:focus {
+  background-color: #374352;
 }
 
 #calculator #buttons .btncontainer:nth-of-type(17) {
