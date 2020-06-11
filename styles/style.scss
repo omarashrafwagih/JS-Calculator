@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #cae5e6;
+  font-family: 'Cairo', sans-serif;
+}
+::selection {
+  background-color: transparent;
+}
+
+/* ------------------------------------------------------ Calculator --------- */
+
+#calculator {
+  overflow: hidden;
+  min-height: 480px;
+  width: 22%;
+  min-width: 280px;
+  background-color: #3a4655;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 7px;
+  box-shadow: 3px 7px 10px gray;
+  #screen {
+    width: 100%;
+    padding: 28px;
+    #problem {
+      color: #9c9c9c;
+      font-size: 16px;
+      text-align: right;
+    }
+    #result {
+      text-align: right;
+      font-size: 30px;
+      color: white;
+    }
+  }
+  #buttons {
+    .btncontainer {
+      transition: all 200ms ease;
+      cursor: pointer;
+      position: relative;
+      max-width: 24.29% !important;
+      height: 69.25px !important;
+      margin: 1px;
+      background-color: #374352;
+      &:hover {
+        background-color: darken(#374352, 5%);
+      }
+      &:active {
+        background-color: darken(#374352, 20%);
+      }
+      &:nth-of-type(17) {
+        width: 48.58% !important;
+        max-width: 48.58% !important;
+        flex: 0 0 50%;
+      }
+      &:nth-of-type(1) {
+        .zorar {
+          color: rgb(221, 103, 103);
+        }
+      }
+      .zorar {
+        font-size: 18px;
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .operator {
+      .zorar {
+        color: #686868;
+        font-weight: bold;
+      }
+    }
+  }
+}
