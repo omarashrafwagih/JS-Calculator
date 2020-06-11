@@ -59,11 +59,13 @@ operators[0].onclick = function () {
 
 operators[1].onclick = function () {
   problem.textContent = eval(problem.textContent) * -1;
+  result.textContent = problem.textContent;
 };
 
 operators[2].onclick = function () {
   let x = eval(problem.textContent);
   result.textContent = x / 100;
+  problem.textContent = result.textContent;
 };
 
 operators[3].onclick = function () {
