@@ -58,34 +58,46 @@ operators[0].onclick = function () {
 };
 
 operators[1].onclick = function () {
-  problem.textContent = eval(problem.textContent) * -1;
-  result.textContent = problem.textContent;
+  if (eval(problem.textContent) >= 0) {
+    problem.textContent = eval(problem.textContent) * -1;
+    result.textContent = problem.textContent;
+  }
 };
 
 operators[2].onclick = function () {
-  let x = eval(problem.textContent);
-  result.textContent = x / 100;
-  problem.textContent = result.textContent;
+  if (eval(problem.textContent) >= 0 || eval(problem.textContent) < 0) {
+    let x = eval(problem.textContent);
+    result.textContent = x / 100;
+    problem.textContent = result.textContent;
+  }
 };
 
 operators[3].onclick = function () {
-  problem.textContent = problem.textContent + operators[3].textContent;
-  problem.textContent = problem.textContent.replace(/\s/g, '');
+  if (eval(problem.textContent) >= 0 || eval(problem.textContent) < 0) {
+    problem.textContent = problem.textContent + operators[3].textContent;
+    problem.textContent = problem.textContent.replace(/\s/g, '');
+  }
 };
 
 operators[4].onclick = function () {
-  problem.textContent = problem.textContent + '*';
-  problem.textContent = problem.textContent.replace(/\s/g, '');
+  if (eval(problem.textContent) >= 0 || eval(problem.textContent) < 0) {
+    problem.textContent = problem.textContent + '*';
+    problem.textContent = problem.textContent.replace(/\s/g, '');
+  }
 };
 
 operators[5].onclick = function () {
-  problem.textContent = problem.textContent + operators[5].textContent;
-  problem.textContent = problem.textContent.replace(/\s/g, '');
+  if (eval(problem.textContent) >= 0 || eval(problem.textContent) < 0) {
+    problem.textContent = problem.textContent + operators[5].textContent;
+    problem.textContent = problem.textContent.replace(/\s/g, '');
+  }
 };
 
 operators[6].onclick = function () {
-  problem.textContent = problem.textContent + operators[6].textContent;
-  problem.textContent = problem.textContent.replace(/\s/g, '');
+  if (eval(problem.textContent) >= 0 || eval(problem.textContent) < 0) {
+    problem.textContent = problem.textContent + operators[6].textContent;
+    problem.textContent = problem.textContent.replace(/\s/g, '');
+  }
 };
 
 operators[7].onclick = function () {
