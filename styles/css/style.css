@@ -29,7 +29,7 @@ body {
   min-height: 480px;
   max-height: 480px;
   max-width: 25%;
-  min-width: 280px;
+  min-width: 320px;
   background-color: #3a4655;
   position: absolute;
   top: 50%;
@@ -85,8 +85,8 @@ body {
   width: 48.58% !important;
   max-width: 48.58% !important;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
+      -ms-flex: 0 0 48.58%;
+          flex: 0 0 48.58%;
 }
 
 #calculator #buttons .btncontainer:nth-of-type(1) .zorar {
